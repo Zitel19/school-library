@@ -1,0 +1,95 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:#222;
+  background:#fff;
+}
+.header{
+  width:100%;
+  min-height:76px;
+  padding:14px 7%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:#fff;
+}
+.brand img{width:52px;height:52px;object-fit:contain}
+nav{display:flex;align-items:center;gap:30px}
+nav a{color:#222;text-decoration:none;font-size:15px}
+nav a:hover{text-decoration:underline}
+.hero{
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  background-image:linear-gradient(90deg,rgba(0,0,0,.57),rgba(0,0,0,.22)),url("https://raw.githubusercontent.com/martinaushie5-pixel/demo-library/main/BImg.jpg");
+  background-size:cover;
+  background-position:center;
+}
+.hero-inner{width:min(1100px,86%);margin:auto;color:#fff;padding:80px 0}
+h1{
+  max-width:760px;
+  font-size:clamp(48px,7vw,88px);
+  line-height:1.03;
+  font-weight:700;
+  margin-bottom:25px;
+}
+.hero p{max-width:720px;font-size:18px;line-height:1.75}
+.rent{
+  display:inline-block;
+  margin-top:32px;
+  padding:15px 28px;
+  background:#fff;
+  color:#222;
+  text-decoration:none;
+  font-weight:700;
+  border-radius:2px;
+}
+.rent:hover{background:#eee}
+.about{
+  max-width:1100px;
+  margin:auto;
+  padding:90px 7%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+.about-image img{width:100%;display:block}
+.about-text h2,.faq h2,.contact h2{
+  font-size:42px;
+  margin-bottom:20px;
+}
+.about-text p,.faq p,.contact p{font-size:17px;line-height:1.75;color:#555}
+.video{padding:20px 7% 80px;max-width:1100px;margin:auto}
+.video iframe{width:100%;height:520px;border:0}
+.faq,.contact{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 7%;
+}
+.faq details{
+  border-top:1px solid #ddd;
+  padding:18px 0;
+}
+.faq details:last-child{border-bottom:1px solid #ddd}
+summary{cursor:pointer;font-weight:600;font-size:17px}
+.contact{padding-top:20px}
+.contact p{margin:10px 0}
+.contact a{color:inherit}
+footer{
+  padding:28px 7%;
+  text-align:center;
+  background:#111;
+  color:#fff;
+  font-size:14px;
+}
+@media(max-width:700px){
+  .header{padding:12px 5%;flex-direction:column;gap:12px}
+  nav{gap:15px;flex-wrap:wrap;justify-content:center}
+  .hero{min-height:580px}
+  .hero-inner{width:90%}
+  .hero p{font-size:16px}
+  .about{grid-template-columns:1fr;padding-top:60px}
+  .video iframe{height:300px}
+}
